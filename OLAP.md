@@ -54,7 +54,8 @@ From here we will go into OLAP operations available for the **Middle Tier** of t
 OLAP servers run on multidimensional view of data, the operations will be discussed in multidimensional data.
 
 Example of a multidimensional OLAP cube is here:
-![alt-text](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/OLAP_Cube.svg/281px-OLAP_Cube.svg.png)
+
+![alt-title](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/OLAP_Cube.svg/281px-OLAP_Cube.svg.png)
 
 List of OLAP operations:
 + Roll-Up (Drill-up or aggregation operation)
