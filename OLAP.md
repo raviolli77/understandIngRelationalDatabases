@@ -38,6 +38,8 @@ Here is an image from the tutorial to give a visual representation:
 
 ![alt-title](https://www.tutorialspoint.com/dwh/images/data_mart.jpg)
 
+### Delivery Process
+
 The next step in the tutorial goes into **Delivery Process** which you can read up on [here](https://www.tutorialspoint.com/dwh/dwh_delivery_process.htm), but with respect to *data analysis* this is the step where we go into the database and do what is called **Data Wrangling**. This process involves extracting the data, cleaning the data, and transforming the data to fit our reporting/analysis needs. 
 
 I won't go into too much detail about this section, because this section is more of a 'you should know how to do' section and 'better to do than to show examples' area. But it is important to note in this file for the sake of teaching OLAP. 
