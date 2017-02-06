@@ -71,7 +71,6 @@ Roll-Up refers to the aggregaton of a data cube in one of two ways:
 + Climbing a concept hierarchy for a dimension
 + By dimension reduction
 
-Example (Borrowed from [OLAP's article about OLAP Operations](http://athena.ecs.csus.edu/~olap/olap/OLAPoperations.php)):
 
 So say we have a table as follows and we wanted to lump cities into their respective countries so that if we were to create a report it would be more readable and ultimately more 'human-friendly', we would perform Roll-Up as follows. 
 
@@ -81,6 +80,25 @@ Roll-Up Example:
 The following **SQL** syntax would create the original query (under the assumption that the tables have variables Locations(Cities), Time (Quarter), and Item(type of items sold)). 
 
 This concept is referred to as **Concept Hierarchy** where 'street < city < province < country'.
+
+Example (Borrowed from [OLAP's article about OLAP Operations](http://athena.ecs.csus.edu/~olap/olap/OLAPoperations.php)):
+Say for our original query we have a table set up so that we can see the relationship with the respective week (in our case week1 and week2) and the temperatures associated with these weeks. 
+
+As shown here:
+![alt-title](http://athena.ecs.csus.edu/~olap/olap/rollupexample.JPG)
+
+Now say we wanted to create 3 levels that are more user friendly, and we decide to create these levels as such:
+
++ Hot (80-85)
++ Mild (64-69)
++ Cold (64-69)
+
+The Roll-Up Operations would then create this new query:
+![alt-title](http://athena.ecs.csus.edu/~olap/olap/newrollup.JPG)
+
+Thus for this example we have the concept hierarchy as 'hot > day >week'
+
+That's a succint overview of the Roll-Up operation, although you will often find your self doing these without knowing the proper name. For now I am creating documentation to fully understand the processes of database management and warehousing. 
 
 ### Drill-Down Operation
 
