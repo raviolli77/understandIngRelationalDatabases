@@ -76,9 +76,8 @@ Roll-Up refers to the aggregaton of a **Data Cube** in one of two ways:
 So say we have a table as follows and we wanted to lump cities into their respective countries so that if we were to create a report it would be more readable and ultimately more 'human-friendly', we would perform Roll-Up as follows. 
 
 Roll-Up Example:
-![alt-title](https://www.tutorialspoint.com/dwh/images/rollup.jpg)
 
-The following **SQL** syntax would create the original query (under the assumption that the tables have variables Locations(Cities), Time (Quarter), and Item(type of items sold)). 
+![alt-title](https://www.tutorialspoint.com/dwh/images/rollup.jpg)
 
 This concept is referred to as **Concept Hierarchy** where 'street < city < province < country'.
 
