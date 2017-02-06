@@ -94,6 +94,7 @@ Now say we wanted to create 3 levels that are more user friendly, and we decide 
 + Cold (64-69)
 
 The Roll-Up Operations would then create this new query:
+
 ![alt-title](http://athena.ecs.csus.edu/~olap/olap/newrollup.JPG)
 
 Thus for this example we have the concept hierarchy as 'hot > day >week'
