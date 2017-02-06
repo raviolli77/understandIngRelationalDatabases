@@ -102,6 +102,11 @@ Thus for this example we have the concept hierarchy as 'hot > day >week'
 
 That's a succint overview of the Roll-Up operation, although you will often find your self doing these without knowing the proper name. For now I am creating documentation to fully understand the processes of database management and warehousing. 
 
+TO DO:
++ Create **SQL** queries that perform roll ups
++ Find example data sets to do concrete examples on
++ Add more details/explanations
+
 ### Drill-Down Operation
 
 ### Slice Operation
@@ -118,3 +123,9 @@ That's a succint overview of the Roll-Up operation, although you will often find
 ### Star Schema
 
 ### Snowflake Schema
+
+## Sources Cited
+
++ [TutorialsPoint's Data Warehousing Tutorial](https://www.tutorialspoint.com/dwh/dwh_olap.htm)
++ [Concept Hierarchies Tutorial And Examples](http://athena.ecs.csus.edu/~olap/olap/OLAPoperations.php)
++ [SearchDataManagement's Definition of OLAP](http://searchdatamanagement.techtarget.com/definition/OLAP)
