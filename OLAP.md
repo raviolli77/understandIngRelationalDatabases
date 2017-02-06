@@ -25,7 +25,7 @@ This works well at describing our data but say we wanted to expand on the `locat
 
 ![alt-text](https://www.tutorialspoint.com/dwh/images/data_cube3d.jpg)
 
-So we create a 3-D table or data cude for this new query which makes more intuitive sense than the previous image:
+So we create a 3-D table or **Data Cube** for this new query which makes more intuitive sense than the previous image:
 
 ![alt-title](https://www.tutorialspoint.com/dwh/images/data_cube3d1.jpg)
 
@@ -47,7 +47,7 @@ I won't go into too much detail about this section, because this section is more
 ### Three-Tier Data Warehouse Architecture
 
 + **Bottom Tier** - This is the data warehouse database server. So a **MySQL** database, **PostgreSQL** database, or **Microsoft Access SQL** database.
-+ **Middle Tier** - This is the **relationsal Data Cube** and in our case the OLAP server.
++ **Middle Tier** - This is the **Relational Data Cube** and in our case the OLAP server.
 + **Top Tier** - This is the Front End Client Layer so this can be a **Third Party Database**, Typically a website used to present the information stored so that the *data analysis* can take place!
 
 From here we will go into OLAP operations available for the **Middle Tier** of this Three-Tier Data Warehouse Architecture since this is the area that must be **Normalized** and developed properly to ensure consistent and reliable data extraction.  
@@ -66,7 +66,7 @@ List of OLAP operations:
 + Pivot (rotate)
 
 ### Roll-Up Operation
-Roll-Up refers to the aggregaton of a data cube in one of two ways:
+Roll-Up refers to the aggregaton of a **Data Cube** in one of two ways:
 
 + Climbing a concept hierarchy for a dimension
 + By dimension reduction
