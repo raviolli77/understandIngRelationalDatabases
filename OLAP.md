@@ -2,6 +2,7 @@
 ## Documentation regarding OLAP Database 
 (Tutorial Found [Here](https://www.tutorialspoint.com/dwh/dwh_olap.htm))
 
+Definition: *'is computer processing that enables a user to easily and selectively extract and view data from different points of view'* (Definition taken from [Margaret Rouse's article](http://searchdatamanagement.techtarget.com/definition/OLAP))
 
 **Contributor**:
 + Raul Eulogio
