@@ -71,7 +71,7 @@ Roll-Up refers to the aggregaton of a data cube in one of two ways:
 + Climbing a concept hierarchy for a dimension
 + By dimension reduction
 
-
+#### Example 1
 So say we have a table as follows and we wanted to lump cities into their respective countries so that if we were to create a report it would be more readable and ultimately more 'human-friendly', we would perform Roll-Up as follows. 
 
 Roll-Up Example:
@@ -81,6 +81,7 @@ The following **SQL** syntax would create the original query (under the assumpti
 
 This concept is referred to as **Concept Hierarchy** where 'street < city < province < country'.
 
+#### Example 2
 Example (Borrowed from [OLAP's article about OLAP Operations](http://athena.ecs.csus.edu/~olap/olap/OLAPoperations.php)):
 Say for our original query we have a table set up so that we can see the relationship with the respective week (in our case week1 and week2) and the temperatures associated with these weeks. 
 
