@@ -17,6 +17,11 @@ Definition: *"[OLAP] is computer processing that enables a user to easily and se
 ## Relational OLAP 
 These servers are placed between a relational back-end server and client front-end tool. For its ability to store and manage data, ROLAP uses relational/extended-relational DBMS (Database Management Systen). We typically model OLAP with a **Data Cube**. 
 
+Important to note:
++ ROLAP are highly scalable
++ Analyze large volumes of data across dimensions
++ 
+
 ### Data Cube
 These help us model our data in multiple dimensions. Best way to show is by examples prvoided by the tutorial, so say we have a 2-D representation of our sales records with respect to one location New Delhi:
 
@@ -108,10 +113,41 @@ TO DO:
 + Add more details/explanations
 
 ### Drill-Down Operation
+This procedure is the opposite of *roll-up*, you can do this process either way:
++ Stepping down the hierarchy 
++ Introducing a new dimension
+
+This example shows a pretty good demonstration, where our data was originally in *quarters*, but we did a *drill-down* procedure to receive monthly information.
+
+![alt-title](https://www.tutorialspoint.com/dwh/images/drill_down.jpg)
+
+Super simple concept no real need to go into too much detail, aside from showing a *SQL* query doing *drill-down* (Which will be added later..)
 
 ### Slice Operation
+*Slicing* is the process of selecting one particular dimension from a cube, giving us a new sub-cube. Again picture diagram showcases this best:
+
+![alt-title](https://www.tutorialspoint.com/dwh/images/slice.jpg)
+
+To reiterate we *sliced* to only receive information with respect to *Q1*. Very common practice in *SQL*
+
+**SQL** Syntax:
+
+	SELECT *
+	FROM tbl1
+	WHERE time = 'Q1';
+
 
 ### Dice Operation
+This process is similar to *slice*, but instead we go about with two or more dimensions. So to give context using the last example, we are using both *Q1* and *Q2* as well as only picking two specific locations, *Vancouver* and *Toronto*. 
+
+**SQL** Syntax:
+
+	SELECT *
+	FROM tbl1 
+	WHERE (location = 'Toronto' OR
+	location = 'Vancouver') AND
+	(time = 'Q1' OR
+	time = 'Q2');
 
 ### Pivot Operation
 
