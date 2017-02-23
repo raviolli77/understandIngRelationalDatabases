@@ -4,6 +4,11 @@
 
 Definition: *"[OLAP] is computer processing that enables a user to easily and selectively extract and view data from different points of view"* (Definition taken from [Margaret Rouse's article](http://searchdatamanagement.techtarget.com/definition/OLAP))
 
+**NOTES**: 
++ I added SQL syntax to as many of the visuals as I could to be more helpful in understanding these concepts as they relate to relational databases. 
++ I am using **PostgreSQL** syntax for this iteration. 
++ More to come :)
+
 **Contributor**:
 + Raul Eulogio
 
