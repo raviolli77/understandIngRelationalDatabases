@@ -14,7 +14,16 @@ Definition: *"[OLAP] is computer processing that enables a user to easily and se
 	+ [Delivery Process](#deliveryprocess)
 	+ [Three-Tier Data Warehouse Architecture](#threetier)
 2. [OLAP Operations](#olapOper)
-
+	+ [Roll-Up Operations](#rollupoper)
+	+ [Drill Down Operations](#drilldownoper)
+	+ [Slice Operations](#sliceoper)
+	+ [Dice Operations](#diceoper)
+	+ [Pivot Operations](#pivotoper)
+3. [Schemas](#schemas)
+	+ [Cube Schema](#cubeschema)
+	+ [Star Schema](#starschema)
+	+ [Snow Flake Schema](#snowflakeschema)
+4. [Sources Cited](#sourcescited)
 
 ## Four types of OLAP servers:
 + Relational OLAP (ROLAP)
@@ -79,7 +88,7 @@ List of OLAP operations:
 + Slice and Dice
 + Pivot (rotate)
 
-### Roll-Up Operation
+### Roll-Up Operation <a name='rollupoper'></a>
 Roll-Up refers to the aggregaton of a **Data Cube** in one of two ways:
 
 + Climbing a concept hierarchy for a dimension
@@ -120,7 +129,7 @@ TO DO:
 + Find example data sets to do concrete examples on
 + Add more details/explanations
 
-### Drill-Down Operation
+### Drill-Down Operation <a name='drilldownoper'></a>
 This procedure is the opposite of *roll-up*, you can do this process either way:
 + Stepping down the hierarchy 
 + Introducing a new dimension
@@ -131,7 +140,7 @@ This example shows a pretty good demonstration, where our data was originally in
 
 Super simple concept no real need to go into too much detail, aside from showing a *SQL* query doing *drill-down* (Which will be added later..)
 
-### Slice Operation
+### Slice Operation <a name='sliceoper'></a>
 *Slicing* is the process of selecting one particular dimension from a cube, giving us a new sub-cube. Again picture diagram showcases this best:
 
 ![alt-title](https://www.tutorialspoint.com/dwh/images/slice.jpg)
@@ -145,7 +154,7 @@ To reiterate we *sliced* to only receive information with respect to *Q1*. Very 
 	WHERE time = 'Q1';
 
 
-### Dice Operation
+### Dice Operation <a name='diceoper'></a>
 This process is similar to *slice*, but instead we go about with two or more dimensions. So to give context using the last example, we are using both *Q1* and *Q2* as well as only picking two specific locations, *Vancouver* and *Toronto*. 
 
 **SQL** Syntax:
@@ -157,18 +166,18 @@ This process is similar to *slice*, but instead we go about with two or more dim
 	(time = 'Q1' OR
 	time = 'Q2');
 
-### Pivot Operation
+### Pivot Operation <a name='pivotoper'></a>
 
 
-## Schemas
+## Schemas <a name='schemas'></a>
 
-### Cube Schema
+### Cube Schema <a name='cubeschema'></a>
 
-### Star Schema
+### Star Schema <a name='starschema'></a>
 
-### Snowflake Schema
+### Snowflake Schema <a name='snowflakeschema'></a>
 
-## Sources Cited
+## Sources Cited <a name='sourcescited'></a>
 
 + [TutorialsPoint's Data Warehousing Tutorial](https://www.tutorialspoint.com/dwh/dwh_olap.htm)
 + [Concept Hierarchies Tutorial And Examples](http://athena.ecs.csus.edu/~olap/olap/OLAPoperations.php)
