@@ -9,14 +9,18 @@ Definition: *"[OLAP] is computer processing that enables a user to easily and se
 
 # Table of Contents
 1. [Relational OLAP](#rolap)
-
+	+ [Data Cube](#datacube)
+	+ [Data Mart](#datamart)
+	+ [Delivery Process](#deliveryprocess)
+	+ [Three-Tier Data Warehouse Architecture](#threetier)
+2. [OLAP Operations](#olapOper)
 ## Four types of OLAP servers:
 + Relational OLAP (ROLAP)
 + Multidimensional OLAP (MOLAP)
 + Hybrid OLAP (HOLAP)
 + Specialized SQL Servers
 
-## Relational OLAP <a name='roplap'></a>
+## Relational OLAP <a name='rolap'></a>
 These servers are placed between a relational back-end server and client front-end tool. For its ability to store and manage data, ROLAP uses relational/extended-relational DBMS (Database Management Systen). We typically model OLAP with a **Data Cube**. 
 
 Important to note:
@@ -24,7 +28,7 @@ Important to note:
 + Analyze large volumes of data across dimensions
 + 
 
-### Data Cube
+### Data Cube <a name='datacube'></a>
 These help us model our data in multiple dimensions. Best way to show is by examples prvoided by the tutorial, so say we have a 2-D representation of our sales records with respect to one location New Delhi:
 
 ![alt-text](https://www.tutorialspoint.com/dwh/images/data_cube2d.jpg)
@@ -39,20 +43,20 @@ So we create a 3-D table or **Data Cube** for this new query which makes more in
 
 This **Data Cube** is then the basis for our relational database, and will help in understanding the dissection and ultimately data analysis for our company/entity. A process known as **Data Mart**
 
-### Data Mart
+### Data Mart <a name='datamart'></a>
 Once we begin to understand the relationship of our database, we can begin creating *queries* for specific target groups, this is referred to as **Data Mart**. An example of this would be say your company is interested in data specific to a certain program that a specific branch your company operates under. Therefore **Data Marts** are very specific pieces of information confined to subjects.  
 
 Here is an image from the tutorial to give a visual representation:
 
 ![alt-title](https://www.tutorialspoint.com/dwh/images/data_mart.jpg)
 
-### Delivery Process
+### Delivery Process <a name='deliveryprocess'></a>
 
 The next step in the tutorial goes into **Delivery Process** which you can read up on [here](https://www.tutorialspoint.com/dwh/dwh_delivery_process.htm), but with respect to *data analysis* this is the step where we go into the database and do what is called **Data Wrangling**. This process involves extracting the data, cleaning the data, and transforming the data to fit our reporting/analysis needs. 
 
 I won't go into too much detail about this section, because this section is more of a 'you should know how to do' section and 'better to do than to show examples' area. But it is important to note in this file for the sake of teaching OLAP. 
 
-### Three-Tier Data Warehouse Architecture
+### Three-Tier Data Warehouse Architecture <a name='threetier'></a>
 
 + **Bottom Tier** - This is the data warehouse database server. So a **MySQL** database, **PostgreSQL** database, or **Microsoft Access SQL** database.
 + **Middle Tier** - This is the **Relational Data Cube** and in our case the OLAP server.
@@ -60,7 +64,7 @@ I won't go into too much detail about this section, because this section is more
 
 From here we will go into OLAP operations available for the **Middle Tier** of this Three-Tier Data Warehouse Architecture since this is the area that must be **Normalized** and developed properly to ensure consistent and reliable data extraction.  
 
-## OLAP Operations
+## OLAP Operations <a name='olapOper'></a>
 OLAP servers run on multidimensional view of data, the operations will be discussed in multidimensional data.
 
 Example of a multidimensional OLAP cube from the previous example:
