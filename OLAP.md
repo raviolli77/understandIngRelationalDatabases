@@ -14,6 +14,8 @@ Definition: *"[OLAP] is computer processing that enables a user to easily and se
 	+ [Delivery Process](#deliveryprocess)
 	+ [Three-Tier Data Warehouse Architecture](#threetier)
 2. [OLAP Operations](#olapOper)
+
+
 ## Four types of OLAP servers:
 + Relational OLAP (ROLAP)
 + Multidimensional OLAP (MOLAP)
