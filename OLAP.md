@@ -44,13 +44,30 @@ These help us model our data in multiple dimensions. Best way to show is by exam
 
 ![alt-text](https://www.tutorialspoint.com/dwh/images/data_cube2d.jpg)
 
+**SQL** Syntax:
+	
+	SELECT *
+	FROM tbl1
+	WHERE location = 'New Delhi';
+
 This works well at describing our data but say we wanted to expand on the `location` table a little  more, by say adding two other locations (Gurgaon and Mumbai), then the new 2-D table isn't as intuitive as before:
 
 ![alt-text](https://www.tutorialspoint.com/dwh/images/data_cube3d.jpg)
 
+**SQL** Syntax:
+	
+	SELECT *
+	FROM tbl1
+	WHERE location = 'Gurgaon' OR 
+	location = 'New Delhi' OR
+	location = 'Mumbai';
+
 So we create a 3-D table or **Data Cube** for this new query which makes more intuitive sense than the previous image:
 
 ![alt-title](https://www.tutorialspoint.com/dwh/images/data_cube3d1.jpg)
+
+**SQL** Syntax:
+Same as previous query
 
 This **Data Cube** is then the basis for our relational database, and will help in understanding the dissection and ultimately data analysis for our company/entity. A process known as **Data Mart**
 
@@ -82,6 +99,11 @@ Example of a multidimensional OLAP cube from the previous example:
 
 ![alt-title](https://www.tutorialspoint.com/dwh/images/data_cube3d1.jpg)
 
+**SQL** Syntax:
+
+	SELECT *
+	FROM tbl1;
+
 List of OLAP operations:
 + Roll-Up (Drill-up or aggregation operation)
 + Drill-down
@@ -100,6 +122,7 @@ So say we have a table as follows and we wanted to lump cities into their respec
 Roll-Up Example:
 
 ![alt-title](https://www.tutorialspoint.com/dwh/images/rollup.jpg)
+
 
 This concept is referred to as **Concept Hierarchy** where 'street < city < province < country'.
 
@@ -121,6 +144,15 @@ The Roll-Up Operations would then create this new query:
 ![alt-title](http://athena.ecs.csus.edu/~olap/olap/newrollup.JPG)
 
 Thus for this example we have the concept hierarchy as 'hot > day >week'
+
+**SQL** Syntax:
+
+	SELECT weeks,
+	COUNT(CASE WHEN temperature >= 64 AND temperature < 69) AS cool
+	COUNT(CASE WHEN temperature >= 69 AND temperature < 79) AS mild
+	COUNT(CASE WHEN temperature >= 80 AND temperature =< 85) AS hot
+	FROM tbl1
+	group by weeks;
 
 That's a succint overview of the Roll-Up operation, although you will often find your self doing these without knowing the proper name. For now I am creating documentation to fully understand the processes of database management and warehousing. 
 
