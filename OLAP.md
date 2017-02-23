@@ -135,9 +135,9 @@ As shown here:
 
 Now say we wanted to create 3 levels that are more user friendly, and we decide to create these levels as such:
 
-+ Hot (80-85)
-+ Mild (64-69)
-+ Cold (64-69)
++ hot (80-85)
++ mild (70-79)
++ cool (64-69)
 
 The Roll-Up Operations would then create this new query:
 
