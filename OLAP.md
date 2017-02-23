@@ -7,6 +7,8 @@ Definition: *"[OLAP] is computer processing that enables a user to easily and se
 **Contributor**:
 + Raul Eulogio
 
+# Table of Contents
+1. [Relational OLAP](#rolap)
 
 ## Four types of OLAP servers:
 + Relational OLAP (ROLAP)
@@ -14,7 +16,7 @@ Definition: *"[OLAP] is computer processing that enables a user to easily and se
 + Hybrid OLAP (HOLAP)
 + Specialized SQL Servers
 
-## Relational OLAP 
+## Relational OLAP <a name='roplap'></a>
 These servers are placed between a relational back-end server and client front-end tool. For its ability to store and manage data, ROLAP uses relational/extended-relational DBMS (Database Management Systen). We typically model OLAP with a **Data Cube**. 
 
 Important to note:
