@@ -14,4 +14,4 @@ This repository was created as a way to document database warehousing with respe
 This [section](OLAP.md) goes over the the concept of **Online Analytical Processing Server** and all things relating to this data warehouse strategy
 
 ## <a name="InMemory"></a>In-Memory Database Connection Using Python
-
+This [section](connectingInMemoryDatabasePython.md) goes over the basics of connecting to an in-memory database using **Python**. Relevant to this documentation because **SQL** does have its limitations with respect to *data analysis* and *data mining*. So a popular and powerful tool is **Python** with which you can connect to **SQL** databases. So this is a small introduction into doing so. 
