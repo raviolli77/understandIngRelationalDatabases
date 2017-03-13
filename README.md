@@ -2,10 +2,10 @@
 ## Created by: Raul Eulogio
 
 # Table of Contents
-* [Abstract](#Abstract)
-* [OLAP](OLAP.md)
-* [In-Memory Database Connection](connectingInMemoryDatabasePython.md)[Easy]
-* [Open-Database Connectivity](#ODBCConnection)[Hard]
+1. [Abstract](#Abstract)
+2. [OLAP](OLAP.md)
+3. [In-Memory Database Connection](connectingInMemoryDatabasePython.md)[Easy]
+4. [Open-Database Connectivity](#ODBCConnection)[Hard]
 
 ## <a name="Abstract"></a>Abstract
 This repository was created as a way to document database warehousing with respect to a company/entity for accurate and succint data collection and extraction. Going into concepts that relate to creating effective database including, but not limited to: normalization of data, Data Marting, and efficient data collecting practices. I will create seperate markdown files relating to different aspects of relational databases. For now (as of 2/6/2017) I have created a brief overview of 
