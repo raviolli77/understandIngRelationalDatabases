@@ -204,9 +204,21 @@ This process is similar to *slice*, but instead we go about with two or more dim
 	time = 'Q2');
 
 ### Pivot Operation <a name='pivotoper'></a>
-
+Very straight forward process where you are rotating the data axes to gain a different presentation of the data. 
 
 ## Schemas <a name='schemas'></a>
+A schema can be seen as a collection of **SQL** objects (tables in our examples) that is associated with a user. When going about database management, you are either the owner (*super-user*) or are a user that has some limitations as to what you can and can't do. In real world application, you will often be a user that does not have access to do certain things a *super-user* has access too. 
+
+Some examples include and are not limited to:
++ Table creation priveledges
++ Insertion of data in tables
++ Deletion of data
+
+Again these examples are priveledges not granted when you are not the *super-user*, which is common in the work place unless you are creating a database for your company. It is good practice to learn these techniques as you would see in many **SQL** Tutorials online.   
+
+Say I was assigned `user1` by the database administrator, the tables (or table) would be my schema. And depending on the privileges I was given I would be able to do things such as delete, insert, create, and query the table(s) available in my schema. You will be given access to  your schema so you will not have to bring up your user-name everytime you do a query. 
+
+Building off of the example in [3](http://www.informit.com/articles/article.aspx?p=1216889&seqNum=2) say we had a table in our schema called `customer_tbl` the table would actually be called `user1.customer_tbl1` but thanks to **SQL** databases we do not have to reiteratively write it as such. Wasn't super important but thought I should include this in my notes.  
 
 ### Cube Schema <a name='cubeschema'></a>
 
@@ -219,3 +231,4 @@ This process is similar to *slice*, but instead we go about with two or more dim
 + [TutorialsPoint's Data Warehousing Tutorial](https://www.tutorialspoint.com/dwh/dwh_olap.htm)
 + [Concept Hierarchies Tutorial And Examples](http://athena.ecs.csus.edu/~olap/olap/OLAPoperations.php)
 + [SearchDataManagement's Definition of OLAP](http://searchdatamanagement.techtarget.com/definition/OLAP)
++ [Managing Database Objects in SQL](http://www.informit.com/articles/article.aspx?p=1216889&seqNum=2)
