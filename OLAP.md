@@ -153,9 +153,9 @@ Thus for this example we have the concept hierarchy as 'hot > day >week'
 **SQL** Syntax:
 
 	SELECT weeks,
-	COUNT(CASE WHEN temperature >= 64 AND temperature < 69) AS cool
-	COUNT(CASE WHEN temperature >= 69 AND temperature < 79) AS mild
-	COUNT(CASE WHEN temperature >= 80 AND temperature =< 85) AS hot
+	SUM(CASE WHEN temperature >= 64 AND temperature < 69 THEN 1 ELSE 0 END) AS cool
+	SUM(CASE WHEN temperature >= 69 AND temperature < 79 THEN 1 ELSE 0 END) AS mild
+	SUM(CASE WHEN temperature >= 80 AND temperature =< 85 THEN 1 ELSE 0 END) AS hot
 	FROM tbl1
 	group by weeks;
 
